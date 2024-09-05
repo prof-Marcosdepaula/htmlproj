@@ -2,92 +2,177 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>Loja Sport Tennis</h1>
+  <div class="header">
+    <h1>Loja Sport Tennis</h1>
+  </div>
+  <div class="topnav" id="navbar">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+  </div>
+  <br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
-    <div class="topnav" id="navbar">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
     </div>
-    <div class="row">
-      <div class="card">
-        <img src="img/tenis1.jpg" alt="Tenis" style="width:100%">
-        <div class="container">
-          <h4><b>Tennis</b></h4> 
-          <p>Architect & Engineer</p> 
-        </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="card">
+      <img src="img/tenis1.jpg" alt="Tenis" style="width:100%">
+      <div class="container">
+        <h4><b>Tennis</b></h4>
+        <p>Architect & Engineer</p>
       </div>
+    </div>
 
-      <div class="card">
-        <img src="img/tenis2.jpg" alt="Tenis" style="width:100%">
-        <div class="container">
-          <h4><b>Tennis</b></h4> 
-          <p>Architect & Engineer</p> 
-        </div>
+    <div class="card">
+      <img src="img/tenis2.jpg" alt="Tenis" style="width:100%">
+      <div class="container">
+        <h4><b>Tennis</b></h4>
+        <p>Architect & Engineer</p>
       </div>
+    </div>
 
-      <div class="card">
-        <img src="img/tenis3.jpg" alt="Tenis" style="width:100%">
-        <div class="container">
-          <h4><b>Tennis</b></h4> 
-          <p>Architect & Engineer</p> 
-        </div>
+    <div class="card">
+      <img src="img/tenis3.jpg" alt="Tenis" style="width:100%">
+      <div class="container">
+        <h4><b>Tennis</b></h4>
+        <p>Architect & Engineer</p>
       </div>
+    </div>
 
-      <div class="card">
-        <img src="img/tenis1.jpg" alt="Tenis" style="width:100%">
-        <div class="container">
-          <h4><b>Tennis</b></h4> 
-          <p>Architect & Engineer</p> 
-        </div>
+    <div class="card">
+      <img src="img/tenis1.jpg" alt="Tenis" style="width:100%">
+      <div class="container">
+        <h4><b>Tennis</b></h4>
+        <p>Architect & Engineer</p>
       </div>
+    </div>
 
-      <div class="card">
-        <img src="img/tenis2.jpg" alt="Tenis" style="width:100%">
-        <div class="container">
-          <h4><b>Tennis</b></h4> 
-          <p>Architect & Engineer</p> 
-        </div>
+    <div class="card">
+      <img src="img/tenis2.jpg" alt="Tenis" style="width:100%">
+      <div class="container">
+        <h4><b>Tennis</b></h4>
+        <p>Architect & Engineer</p>
       </div>
+    </div>
 
-      <div class="card">
-        <img src="img/tenis3.jpg" alt="Tenis" style="width:100%">
-        <div class="container">
-          <h4><b>Tennis</b></h4> 
-          <p>Architect & Engineer</p> 
-        </div>
+    <div class="card">
+      <img src="img/tenis3.jpg" alt="Tenis" style="width:100%">
+      <div class="container">
+        <h4><b>Tennis</b></h4>
+        <p>Architect & Engineer</p>
       </div>
-      
-        
-        
-      </div>
-    <a href="principal.html"></a>
-    <script>
-      // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+    </div>
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.scrollY >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+  </div>
+  <a href="principal.html"></a>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.scrollY >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <script>
+    let slideIndex2 = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex2++;
+      if (slideIndex2 > slides.length) {slideIndex2 = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex2-1].style.display = "block";  
+      dots[slideIndex2-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
     </script>
 </body>
+
 </html>
